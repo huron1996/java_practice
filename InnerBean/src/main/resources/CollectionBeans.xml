@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="javaCollection" class="com.huron.collection.JavaCollection">
+        <!--config List-->
+        <property name="addressList">
+            <list>
+                <value>India</value>
+                <value>USA</value>
+                <value>123</value>
+                <value>USA</value>
+            </list>
+        </property>
+
+        <!--config Set-->
+        <!--Set can not have identical items-->
+        <property name="addressSet">
+            <set>
+                <value>MJ</value>
+                <value>goathacker</value>
+                <value>24</value>
+            </set>
+        </property>
+
+        <!--config Map-->
+        <property name="addressMap">
+            <map>
+                <entry key="1" value="INDIEA"/>
+                <entry key="2" value="Russia"/>
+                <entry key="3" value="France"/>
+            </map>
+        </property>
+
+        <!--config properties-->
+        <property name="addressProp">
+            <props>
+                <prop key="one">Huron</prop>
+                <prop key="two">Kobe</prop>
+                <prop key="three">Magic Johnson</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>
